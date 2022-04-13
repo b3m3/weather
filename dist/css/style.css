@@ -142,32 +142,32 @@ h1, h2, h3, h4, h5, h6 {
 
 .icon-cloudy-dewy:before {
   content: "\e900";
-  font-size: 16px;
+  font-size: 30px;
 }
 
 .icon-cloudy-partial:before {
   content: "\e901";
-  font-size: 16px;
+  font-size: 30px;
 }
 
 .icon-cloudy:before {
   content: "\e902";
-  font-size: 16px;
+  font-size: 30px;
 }
 
 .icon-cloudy-windy:before {
   content: "\e903";
-  font-size: 16px;
+  font-size: 30px;
 }
 
 .icon-hail:before {
   content: "\e904";
-  font-size: 16px;
+  font-size: 30px;
 }
 
 .icon-night-clear:before {
   content: "\e905";
-  font-size: 16px;
+  font-size: 30px;
 }
 
 .icon-sunny:before {
@@ -188,7 +188,7 @@ html {
 body {
   font-family: "Rubik";
   font-weight: 400;
-  color: #f2fbffb3;
+  color: rgba(242, 251, 255, 0.8);
   background-color: #42C2FF;
   font-size: 18px;
 }
@@ -197,7 +197,6 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  overflow-x: hidden;
 }
 
 .main {
@@ -236,6 +235,9 @@ body {
 
 .body__search {
   min-height: 35px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
   background: linear-gradient(269.42deg, #F2FBFF -1.71%, rgba(242, 251, 255, 0.3) 100%);
   opacity: 0.5;
   border-radius: 18px;
