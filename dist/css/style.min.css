@@ -188,8 +188,8 @@ html {
 body {
   font-family: "Rubik";
   font-weight: 400;
-  color: rgba(242, 251, 255, 0.7);
-  background-color: #5486c0;
+  color: #f2fbffb3;
+  background: #42d5fd;
   font-size: 18px;
   transition: 1.5s ease;
 }
