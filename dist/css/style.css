@@ -74,9 +74,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @font-face {
-  font-family: "Poppins";
+  font-family: "icomoon";
   font-display: swap;
-  src: url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins-Regular.ttf") format("ttf");
+  src: url("../fonts/icomoon.woff2") format("woff2"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
@@ -95,23 +95,23 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 @font-face {
+  font-family: "Poppins";
+  font-display: swap;
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "icomoon";
+  font-display: swap;
+  src: url("../fonts/icomoon.woff2") format("woff2"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
   font-family: "Rubik";
   font-display: swap;
   src: url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff"), url("../fonts/Rubik-Regular.ttf") format("ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "icomoon";
-  font-display: swap;
-  src: url("../fonts/icomoon.woff2") format("woff2"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "icomoon";
-  font-display: swap;
-  src: url("../fonts/icomoon.woff2") format("woff2"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
@@ -189,8 +189,9 @@ body {
   font-family: "Rubik";
   font-weight: 400;
   color: rgba(242, 251, 255, 0.7);
-  background-color: #42C2FF;
+  background-color: #5486c0;
   font-size: 18px;
+  transition: 1.5s ease;
 }
 
 .app {
@@ -204,7 +205,7 @@ body {
 }
 
 /* Weather */
-@keyframes animate {
+@keyframes animate-image {
   from {
     transform: rotateY(25deg) rotateX(2deg);
   }
@@ -223,7 +224,7 @@ body {
   max-width: 25%;
   min-width: 180px;
   width: 100%;
-  animation: animate 5s ease-in-out both infinite;
+  animation: animate-image 5s ease-in-out both infinite;
 }
 .weather__search {
   position: absolute;
@@ -271,6 +272,26 @@ body {
 }
 .search__button:hover {
   background: rgba(240, 250, 255, 0.5);
+}
+.search__wrong {
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 20px;
+  top: -25px;
+  left: 20px;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  width: 0;
+  transition: 0.3s ease;
+}
+.search__wrong.show-wrong {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+  width: 150px;
 }
 
 .info__row {
