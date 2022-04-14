@@ -12,32 +12,30 @@
 
 <body>
   <div class="app" id="app">
-    
     <main class="main">
-      <div class="weather">
-        <div class="weather__image-status">
+      <section class="weather">
+        <div class="weather__image">
           <img src="img/sun.svg" alt="weather">
         </div>
-        <div class="weather__body body">
-          <div class="body__search search-body">
-            <input class="search-body__input" type="text" placeholder="Search">
-            <button class="search-body__button"><span class="icon-search"></span></button>
-          </div>
-          <div class="body__info info-body">
-            <div class="info-body__row">
-              <h3 class="info-body__town"><span class="country">Ukraine</span>, <span class="town">Kyiv</span></h3>
-              <p class="info-body__temperature"><span class="temperature">--</span> &deg;C</p>
-              <p class="info-body__sky"><span class="sky">--</span> <span class="icon-status icon-sunny"></span></p>
-            </div>
-            <div class="info-body__row">
-              <p class="info-body__humidity">Humidity: <span class="humidity">--</span> %</p>
-              <p class="info-body__wind">Speed: <span class="wind">--</span> m/s</p>
-            </div>
+        <div class="weather__search">
+          <div class="search__body">
+            <input class="search__input" type="text" placeholder="Search">
+            <button class="search__button"><span class="icon-search"></span></button>
           </div>
         </div>
-      </div>
+        <div class="weather__info">
+          <div class="info__row">
+            <h3 class="info__town"><span class="country">Ukraine</span>, <span class="town">Kyiv</span></h3>
+            <p class="info__temperature"><span class="temperature">--</span> &deg;C</p>
+            <p class="info__sky"><span class="sky">--</span> <span class="icon-status icon-sunny"></span></p>
+          </div>
+          <div class="info__row">
+            <p class="info__humidity">Humidity: <span class="humidity">--</span> %</p>
+            <p class="info__wind">Speed: <span class="wind">--</span> m/s</p>
+          </div>
+        </div>
+      </section>
     </main>
-    
   </div>
 
   <script src="js/app.min.js"></script>
